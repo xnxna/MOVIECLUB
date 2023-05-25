@@ -1,0 +1,257 @@
+/* Адаптация страницы при разрешении меньше 1230 */
+    @media (max-width: 1230px) {
+        /* Меню навигации меньется на кнопку */
+        .nav-list {
+            display: none;
+        }
+        .nav-button {
+            display: block;
+            position: absolute;
+            z-index: 9;
+            top: 46px;
+            right: 30px;
+        }
+        .nav.open .nav-list {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+
+            z-index: 8;
+            padding: 46px 30px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+
+            font-size: 34px;
+            font-weight: 600;
+        }
+        /* Смена цветов ссылок в навигации */
+            .link {
+                color: #828282;
+            }
+            .link.active {
+                color: black;
+            }
+    }
+
+/* Адаптация страницы при разрешении 1000 */
+    @media (max-width:1000px){
+        .slider{
+        position: relative;
+        max-width: 900px;
+        height: 540px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+        .cellAbout{
+            font-size: 25px;
+        }
+        .boxLogo{
+            font-size: 120px;
+        }
+    }
+
+/* Адаптация страницы при разрешении 800 */
+    @media (max-width:800px){
+        .slider{
+        position: relative;
+        max-width: 700px;
+        height: 420px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+        .sliderJW{
+            position: relative;
+            max-width: 700px;
+            height: 280px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .textBox{
+            font-size: 18px;
+        }
+        .cellAbout{
+            font-size: 20px;
+        }
+        .boxLogo{
+            font-size: 100px;
+        }
+    } 
+
+/* Адаптация страницы при разрешении 690 */
+@media (max-width: 690px) {
+    .headerContainer{
+        background-color: #878585;
+    }
+    /* Меню брэд крамбс меняем на бургер */
+        .cell-list{
+            display: none;
+        }
+        label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 0 0 0;
+            cursor: pointer;
+            z-index: 7;
+            font-weight: 700;
+        }
+        .cell-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-height: 0;
+            font-size: 0;
+            overflow: hidden;
+            transition: .5s all;
+        }
+        .link-cell{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            color:black;
+            text-decoration: none;
+        }
+        #check-menu:checked ~ .cell-list{
+            font-size: 16px;
+            max-height: 250px;
+        }
+    .slider{
+        position: relative;
+        max-width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+    h1{
+        font-size: 35px;
+    }    
+    .sliderJW{
+        position: relative;
+        max-width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .textBox{
+        font-size: 16px;
+    }
+
+    .cellAbout{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .boxLogo{
+        font-size: 80px;
+    }
+}
+
+/* Адаптация страницы при разрешении 550 */
+@media (max-width:550px){
+    .slider{
+        position: relative;
+        max-width: 550px;
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+    h1{
+        font-size: 25px;
+    }
+    .sliderJW{
+        position: relative;
+        max-width: 400px;
+        height: 160px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .textBox{
+        font-size: 15px;
+    }
+
+    .reviewsCardTitle{
+        font-size: 18px;
+    }
+    .boxAbout img{
+        border-radius: 30px;
+    }
+    .boxLogo{
+        font-size: 60px;
+    }
+    .boxAbout{
+        font-size: 15px;
+    }
+} 
+
+/* Адаптация страницы при разрешении 450 */
+@media (max-width:450px){
+    .slider{
+        position: relative;
+        max-width: 450px;
+        height: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+    h1{
+        font-size: 20px;
+    }
+    .buttonFound{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .sliderJW{
+        position: relative;
+        max-width: 300px;
+        height: 120px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .textBox{
+        font-size: 14px;
+    }
+    .footerContainer{
+        height: 210px;
+    }
+    
+    .cellAbout{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .boxLogo{
+        font-size: 40px;
+    }
+    .aboutContainer{
+        padding-top: 100px;
+    }
+}
+
+/* Адаптация страницы при разрешении 300 */
+    @media (max-width:300px){
+        .slider{
+            position: relative;
+            max-width: 300px;
+            height: 100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .headerLogo{
+            font-size: 20px;
+        }
+        .headerContainer{
+            padding-bottom: 10px;
+        }
+        .footerContainer{
+            height: 210px;
+        }
+        .boxLogo{
+            font-size: 30px;
+        }
+        .boxAbout{
+            font-size: 10px;
+        }
+} 

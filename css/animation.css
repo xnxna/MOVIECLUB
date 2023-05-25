@@ -1,0 +1,31 @@
+/* Анимация для кнопки на странице 404 */
+@keyframes myAnim{
+
+
+    30%{
+        background-color: rgb(214, 92, 16);
+    }
+    60%{
+        background-color: rgb(245, 249, 8);
+    }
+    100%{
+        background-color: rgb(250, 173, 5);
+    }
+    
+}
+
+/* Анимация для надписи ошибки на странице 404 */
+@keyframes AnimT{
+
+    0%{
+        font-size: 0px;
+    }
+
+    50%{
+        font-size: 100px;
+    }
+
+    100%{
+        font-size: 50px;
+    }
+}
